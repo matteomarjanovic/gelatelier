@@ -14,8 +14,7 @@ const Footer = () => {
             <Logo />
           </a>
           <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray pt-[18px] pb-[33px]">
-            It is a long established fact that a reader will be distracted
-            lookings.
+            Il laboratorio del gusto artigianale: qualità, passione e sapori autentici per la tua attività.
           </p>
           <div className="flex gap-5 md:gap-[54px]">
             <a href="/">
@@ -34,61 +33,61 @@ const Footer = () => {
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Pages
+            Pagine
           </h5>
           <div className="flex flex-col gap-6">
             <a
-              href="/about"
+              href="#"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              About Us
+              Chi Siamo
             </a>
             <a
-              href="/services"
+              href="#"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Services
+              Servizi
             </a>
             <a
               href="/contact"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Contact Us
+              Contattaci
             </a>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Services
+            Prodotti
           </h5>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Kitchen
+              Gelati Classici
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Living Room
+              Gusti Innovativi
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Dining Hall
+              Sorbetti
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Bedroom
+              Semifreddi
             </p>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Contact
+            Contatti
           </h5>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              55 East Birchwood Ave. Brooklyn, New York 11201
+              Via della Gelateria, 123<br />Milano, Italia
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              contact@interno.com
+              info@gelatelier.it
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              (123) 456 - 7890
+              +39 123 456 7890
             </p>
           </div>
         </div>

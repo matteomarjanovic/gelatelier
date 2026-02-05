@@ -5,48 +5,58 @@ const ContactForm = () => {
   return (
     <div className="col-span-1 lg:col-span-2">
       <form className="w-full grid grid-cols-2 gap-x-10 gap-y-[50px]">
-        <label htmlFor="name">
+        <label htmlFor="companyName" className="col-span-2">
           <input
             type="text"
-            name="name"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Name"
+            name="companyName"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            placeholder="Nome Azienda *"
+            required
           />
         </label>
-        <label htmlFor="email">
+        <label htmlFor="companyType" className="col-span-2 lg:col-span-1">
+          <select
+            id="companyType"
+            name="companyType"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray bg-transparent"
+            required
+            aria-label="Tipo di Attività"
+          >
+            <option value="">Tipo di Attività *</option>
+            <option value="bar">Bar</option>
+            <option value="hotel">Hotel</option>
+            <option value="ristorante">Ristorante</option>
+            <option value="altro">Altro</option>
+          </select>
+        </label>
+        <label htmlFor="email" className="col-span-2 lg:col-span-1">
           <input
             type="email"
             name="email"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Email"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            placeholder="Email *"
+            required
           />
         </label>
-        <label htmlFor="subject">
+        <label htmlFor="phone" className="col-span-2">
           <input
-            type="text"
-            name="subject"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Subject"
-          />
-        </label>
-        <label htmlFor="phone">
-          <input
-            type="number"
+            type="tel"
             name="phone"
-            className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Phone"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            placeholder="Numero di Telefono *"
+            required
           />
         </label>
         <textarea
           name="message"
-          className="col-span-2 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+          className="col-span-2 border-b w-full border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
           cols={30}
           rows={10}
-          placeholder="Hello, I am interested in..."
+          placeholder="Messaggio (facoltativo): raccontaci delle tue esigenze..."
         ></textarea>
 
         <div className="w-full flex justify-end col-span-2">
-          <Button text="Submit" type="submit" />
+          <Button text="Invia Richiesta" type="submit" />
         </div>
       </form>
     </div>

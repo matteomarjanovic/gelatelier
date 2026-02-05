@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Custom theme configuration */
+@theme {
+  /* Background images */
+  --background-image-hero: url('/banner.png');
+  --background-image-main: url('/Background.jpg');
+  --background-image-about: url('/aboutpage-bg.png');
+  --background-image-services: url('/servicespage-bg.jpg');
+  --background-image-contact: url('/contactpage-bg.jpg');
+  
+  /* Font families */
+  --font-family-dm: "DM Serif Display", serif;
+  --font-family-jost: "Jost", sans-serif;
+  
+  /* Primary colors */
+  --color-primary-100: #cda274;
+  --color-primary-200: #292f36;
+  --color-primary-300: #f4f0ec;
+  --color-primary-400: #e2e2e2;
+  
+  /* Text colors */
+  --color-text-blue: #1b2534;
+  --color-text-gray: #4d4f52;
+  --color-text-gray-100: #5f5f5f;
+  --color-text-gray-200: #4d5053;
+  --color-text-gray-300: #e5e5e5;
+}
+
+/* Custom utilities */
+@utility center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@utility startCenter {
+  display: flex;
+  align-items: center;
+}
+
+@utility btwn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
