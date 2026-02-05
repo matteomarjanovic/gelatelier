@@ -40,7 +40,7 @@ const Footer = () => {
               href="#"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Chi Siamo
+              Chi siamo
             </a>
             <a
               href="#"

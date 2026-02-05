@@ -20,10 +20,9 @@ const Navbar = () => {
   const linkStyle = "text-xl leading-6 font-jost text-primary-200";
 
   return (
-    <div 
-      className={`fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300 ${
-        scrolled ? "py-4" : "py-7"
-      }`}
+    <div
+      className={`fixed top-0 left-0 right-0 z-50 transition-all sduration-300 ${scrolled ? "py-4 shadow-xs bg-white" : "py-7 bg-white/0"
+        }`}
     >
       <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full flex justify-between items-center">
         <a href="/">
@@ -38,7 +37,7 @@ const Navbar = () => {
               Home
             </a>
             <a href="#" className={linkStyle}>
-              Chi Siamo
+              Chi siamo
             </a>
             <a href="#" className={linkStyle}>
               Servizi
@@ -85,7 +84,7 @@ const Navbar = () => {
               Home
             </a>
             <a href="#" className={linkStyle}>
-              Chi Siamo
+              Chi siamo
             </a>
             <a href="#" className={linkStyle}>
               Servizi

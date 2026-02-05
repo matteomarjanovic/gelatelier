@@ -1,49 +1,67 @@
 ---
-import MainLayout from '../layouts/main-layout.astro'
-import ContactInfo from '../components/contact-box.tsx'
-import ContactForm from '../components/contact-form.tsx'
+import MainLayout from "../layouts/main-layout.astro";
+import ContactInfo from "../components/contact-box.tsx";
+import ContactForm from "../components/contact-form.tsx";
 ---
 
-
-<MainLayout title = 'Gelatelier - Contattaci'>
-
+<MainLayout title="Gelatelier - Contattaci">
   <!-- Banner Section -->
 
-  <section class="w-full bg-contact h-[50vh] flex justify-center items-end">
-    <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
-      <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">Contattaci</h1>
-      <p class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"> <a href="/">Home</a> / Contattaci</p>
+  <section
+    class="w-full bg-contact bg-cover bg-no-repeat h-[50vh] flex justify-center items-end"
+  >
+    <div
+      class="py-7 lg:py-8 px-16 lg:px-18 flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5"
+    >
+      <h1
+        class="text-xl leading-3 lg:text-2xl lg:leading-4 font-dm capitalize text-primary-200"
+      >
+        Contattaci
+      </h1>
     </div>
   </section>
 
   <!-- Intro Section -->
 
-	<section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px]">
-		<h2 class="text-[30px] text-center capitalize font-dm tracking-wide lg:max-w-[70%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue ">Iniziamo una collaborazione di successo</h2>
-    <p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">Compila il modulo per ricevere informazioni sui nostri prodotti e servizi. Ti ricontatteremo al più presto per discutere insieme come possiamo supportare la tua attività.</p>
+  <section
+    class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 px-12 xl:px-0 w-full mx-auto pt-[50px] lg:pt-[100px]"
+  >
+    <h2
+      class="text-[30px] text-center font-dm tracking-wide lg:max-w-[70%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue"
+    >
+      Gelato artigianale di qualità per la tua attività
+    </h2>
+    <p
+      class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto"
+    >
+      Compila il modulo per ricevere informazioni sui nostri prodotti e servizi.
+      Ti ricontatteremo al più presto per discutere insieme come possiamo
+      supportare la tua attività con il nostro servizio di gelato artigianale!
+    </p>
 
     <!-- main section -->
-    <div class="grid grid-cols-1 gap-[55px] pt-20 lg:grid-cols-3 place-content-center">
-      <ContactInfo />
-      <ContactForm />
+    <div
+      class="grid grid-cols-1 gap-[55px] pt-20 lg:grid-cols-3 place-content-center"
+    >
+      <div class="order-2 lg:order-1">
+        <ContactInfo />
+      </div>
+      <div class="order-1 lg:order-2 lg:col-span-2">
+        <ContactForm />
+      </div>
     </div>
-	</section>
-
- 
-
+  </section>
 </MainLayout>
 
 <style>
-
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-
 </style>

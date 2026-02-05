@@ -3,15 +3,18 @@
 /* Custom theme configuration */
 @theme {
   /* Background images */
-  --background-image-hero: url('/banner.png');
+  --background-image-hero: url('still-life-cookies-ice-cream.jpg');
+  /* --background-image-hero: url('/banner.png'); */
   --background-image-main: url('/Background.jpg');
-  --background-image-about: url('/aboutpage-bg.png');
+  --background-image-about: url('/bowl-decorated-chocolate-ice-cream.jpg');
+  /* --background-image-about: url('/aboutpage-bg.png'); */
   --background-image-services: url('/servicespage-bg.jpg');
-  --background-image-contact: url('/contactpage-bg.jpg');
+  --background-image-contact: url('/contacts_ice_creams.png');
+  /* --background-image-contact: url('/contactpage-bg.jpg'); */
   
   /* Font families */
-  --font-family-dm: "DM Serif Display", serif;
-  --font-family-jost: "Jost", sans-serif;
+  --font-dm: "DM Sans", serif;
+  --font-jost: "Jost", sans-serif;
   
   /* Primary colors */
   --color-primary-100: #cda274;
