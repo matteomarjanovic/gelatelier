@@ -10,5 +10,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: "server",
-  adapter: netlify(),
+  adapter: netlify(
+    {
+      imageCDN: false,
+    }
+  ),
 });
