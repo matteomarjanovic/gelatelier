@@ -53,6 +53,9 @@ const Navbar = () => {
           <div
             onClick={() => setToggled(!toggled)}
             className="space-y-1.5 cursor-pointer z-50 relative"
+            role="button"
+            aria-label="Toggle menu"
+            aria-expanded={toggled}
           >
             <motion.span
               animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}

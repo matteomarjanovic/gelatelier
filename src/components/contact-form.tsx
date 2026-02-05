@@ -16,9 +16,11 @@ const ContactForm = () => {
         </label>
         <label htmlFor="companyType" className="col-span-2 lg:col-span-1">
           <select
+            id="companyType"
             name="companyType"
             className="w-full border-b border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray bg-transparent"
             required
+            aria-label="Tipo di Attività"
           >
             <option value="">Tipo di Attività *</option>
             <option value="bar">Bar</option>
