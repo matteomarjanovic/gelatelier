@@ -9,7 +9,7 @@ const ContactForm = () => {
           <input
             type="text"
             name="companyName"
-            className="w-full border-b border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
             placeholder="Nome Azienda *"
             required
           />
@@ -18,7 +18,7 @@ const ContactForm = () => {
           <select
             id="companyType"
             name="companyType"
-            className="w-full border-b border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray bg-transparent"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray bg-transparent"
             required
             aria-label="Tipo di Attività"
           >
@@ -33,7 +33,7 @@ const ContactForm = () => {
           <input
             type="email"
             name="email"
-            className="w-full border-b border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
             placeholder="Email *"
             required
           />
@@ -42,14 +42,14 @@ const ContactForm = () => {
           <input
             type="tel"
             name="phone"
-            className="w-full border-b border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+            className="w-full border-b border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
             placeholder="Numero di Telefono *"
             required
           />
         </label>
         <textarea
           name="message"
-          className="col-span-2 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
+          className="col-span-2 border-b w-full border-black outline-hidden py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
           cols={30}
           rows={10}
           placeholder="Messaggio (facoltativo): raccontaci delle tue esigenze..."
