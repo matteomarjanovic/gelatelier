@@ -17,7 +17,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle = "text-xl leading-6 font-jost text-primary-200 hover:opacity-70 transition-all duration-300 self-center font-semibold";
 
   return (
     <div
@@ -42,7 +42,7 @@ const Navbar = () => {
             <a href="#" className={linkStyle}>
               Servizi
             </a>
-            <a href="/contact" className={linkStyle}>
+            <a href="/contact" className={`${linkStyle} bg-primary-200 text-white px-6 py-3 rounded-xl`}>
               Contattaci
             </a>
           </nav>
@@ -89,7 +89,7 @@ const Navbar = () => {
             <a href="#" className={linkStyle}>
               Servizi
             </a>
-            <a href="/contact" className={linkStyle}>
+            <a href="/contact" className={`${linkStyle} bg-primary-200 text-white px-6 py-3 rounded-xl`}>
               Contattaci
             </a>
           </motion.nav>
